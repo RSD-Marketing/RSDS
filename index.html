@@ -21,8 +21,8 @@
                     colors: {
                         'neutral-bg': '#F9FFEE', // Very soft off-white/cream
                         'neutral-card': '#FFFFFF',
-                        'primary-dark': '#1A431A', // Deep Forest Green (New)
-                        'accent-gold': '#D4AF37', // Muted Gold (Retained)
+                        'primary-dark': '#1A431A', // Deep Forest Green
+                        'accent-gold': '#D4AF37', // Muted Gold
                         'accent-soft': '#E8E1D5', // Beige
                         'text-main': '#333333',
                         'text-muted': '#666666'
@@ -53,6 +53,15 @@
         html {
             scroll-behavior: smooth;
         }
+        
+        /* Custom Styles for Form Integration */
+        :root {
+            --primary-dark: #1A431A; 
+            --accent-gold: #D4AF37;
+        }
+        .cta-background {
+            background-color: var(--primary-dark);
+        }
     </style>
 </head>
 <body class="bg-neutral-bg text-text-main font-sans antialiased">
@@ -61,8 +70,10 @@
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-md border-b border-accent-soft">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
-                <!-- Logo/Brand Name - REPLACED WITH FULL TEXT -->
+                <!-- Logo/Brand Name -->
                 <div class="flex items-center space-x-2">
+                    <!-- If you want to use the logo image, make sure it's uploaded to /assets/RSD-Logo.jpg -->
+                    <!-- <img src="./assets/RSD-Logo.jpg" onerror="this.onerror=null; this.src='https://placehold.co/120x40/1A431A/D4AF37?text=Rising+Starz+Logo'" alt="Rising Starz Digital Solutions Logo" class="h-10 w-auto"> -->
                     <div class="text-2xl text-accent-gold">★</div>
                     <span class="font-serif text-xl font-bold text-primary-dark">Rising Starz Digital Solutions</span>
                 </div>
@@ -273,43 +284,34 @@
         </section>
 
         <!-- 5. Contact/CTA (Content Launchpad) -->
-        <section id="contact" class="py-20 bg-primary-dark">
+        <section id="contact" class="py-20 cta-background">
             <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-4xl font-serif font-bold text-white mb-4">Ready to Become a Rising Star?</h2>
                 <p class="text-xl text-white/80 mb-8">
                     Stop wasting time and start seeing measurable local growth. Your free, zero-obligation audit is waiting.
                 </p>
                 
-                <div class="bg-white p-6 rounded-xl shadow-2xl">
-                    <!-- CONTACT CTA SECTION - Paste into the final section of your index.html before the footer -->
-<section id="contact" class="py-20 cta-background">
-    <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="font-serif font-bold text-white mb-4" style="font-size: 2.25rem;">Ready to Become a Rising Star?</h2>
-        <p style="font-size: 1.25rem; color: rgba(255, 255, 255, 0.8); margin-bottom: 2rem;">
-            Stop wasting time and start seeing measurable local growth. Your free, zero-obligation audit is waiting.
-        </p>
-        
-        <div style="background-color: white; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
-            
-            <form id="contact-form" action="YOUR_FORMSPREE_ENDPOINT_HERE" method="POST" style="margin-top: 1rem; margin-bottom: 1rem; display: flex; flex-direction: column; gap: 1rem;">
-                <input type="text" name="Name" placeholder="Your Name" required 
-                       style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #D1D5DB; border-radius: 0.5rem; font-family: 'Inter', sans-serif;">
-                <input type="email" name="Email" placeholder="Business Email" required 
-                       style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #D1D5DB; border-radius: 0.5rem; font-family: 'Inter', sans-serif;">
-                <textarea name="Challenge" placeholder="Your Biggest Social Media Challenge (Optional)" rows="3" 
-                          style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #D1D5DB; border-radius: 0.5rem; font-family: 'Inter', sans-serif;"></textarea>
-                
-                
-                <button type="submit" class="btn-primary btn-gold" 
-                        style="width: 100%; background-color: var(--accent-gold); color: white; font-weight: 600; padding: 0.75rem 1rem; border-radius: 0.75rem; transition: background-color 0.2s ease;">
-                    Request Free 3-Point Audit
-                </button>
-            </form>
+                <div style="background-color: white; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
+                    
+                    <!-- *** CRITICAL: REPLACE THE ACTION URL BELOW WITH YOUR UNIQUE FORMSPREE ENDPOINT *** -->
+                    <!-- This form submission logic is now handled entirely by Formspree via the action attribute. -->
+                    <form id="contact-form" action="YOUR_FORMSPREE_ENDPOINT_HERE" method="POST" style="margin-top: 1rem; margin-bottom: 1rem; display: flex; flex-direction: column; gap: 1rem;">
+                        
+                        <!-- Input Field Styles (Clean, Rounded, Light Border) -->
+                        <input type="text" name="Name" placeholder="Your Name" required 
+                            style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #D1D5DB; border-radius: 0.5rem; font-family: 'Inter', sans-serif;">
+                        <input type="email" name="Email" placeholder="Business Email" required 
+                            style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #D1D5DB; border-radius: 0.5rem; font-family: 'Inter', sans-serif;">
+                        <textarea name="Challenge" placeholder="Your Biggest Social Media Challenge (Optional)" rows="3" 
+                                style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #D1D5DB; border-radius: 0.5rem; font-family: 'Inter', sans-serif;"></textarea>
+                        
+                        <!-- Button Styles (Gold Accent) -->
+                        <button type="submit" class="btn-primary btn-gold" 
+                                style="width: 100%; background-color: #D4AF37; color: white; font-weight: 600; padding: 0.75rem 1rem; border-radius: 0.75rem; transition: background-color 0.2s ease;">
+                            Request Free 3-Point Audit
+                        </button>
+                    </form>
 
-        </div>
-    </div>
-</section>
-                    <p id="submission-message" class="mt-4 text-sm text-text-muted hidden">Thank you! We'll be in touch within 24 hours.</p>
                 </div>
             </div>
         </section>
@@ -331,14 +333,12 @@
     <script>
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        const contactForm = document.getElementById('contact-form');
-        const submissionMessage = document.getElementById('submission-message');
-        const navLinks = document.querySelectorAll('#mobile-menu a');
-
+        
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
+        const navLinks = document.querySelectorAll('#mobile-menu a');
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 if (!mobileMenu.classList.contains('hidden')) {
@@ -347,16 +347,7 @@
             });
         });
 
-        contactForm.addEventListener('submit', (event) => {
-            event.preventDefault();
-            
-            contactForm.reset();
-            submissionMessage.classList.remove('hidden');
-
-            setTimeout(() => {
-                submissionMessage.classList.add('hidden');
-            }, 5000);
-        });
+        // IMPORTANT: The local form submission logic was removed to allow Formspree to handle the submission.
     </script>
 </body>
 </html>
