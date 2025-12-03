@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rising Starz Digital Solutions | Local Social Media Marketing Simplified</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome (for Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts (Inter & Playfair Display) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght=600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neutral-bg': '#F9FFEE', // Very soft off-white/cream
+                        'neutral-card': '#FFFFFF',
+                        'primary-dark': '#1A431A', // Deep Forest Green (New)
+                        'accent-gold': '#D4AF37', // Muted Gold (Retained)
+                        'accent-soft': '#E8E1D5', // Beige
+                        'text-main': '#333333',
+                        'text-muted': '#666666'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F9FFEF;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 4px;
+        }
+
+        /* Smooth Scroll for Nav */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-neutral-bg text-text-main font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-md border-b border-accent-soft">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo/Brand Name - REPLACED WITH FULL TEXT -->
+                <div class="flex items-center space-x-2">
+                    <div class="text-2xl text-accent-gold">★</div>
+                    <span class="font-serif text-xl font-bold text-primary-dark">Rising Starz Digital Solutions</span>
+                </div>
+                
+                <!-- Desktop Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#mission" class="text-text-muted hover:text-primary-dark transition-colors text-sm font-medium">Our Mission</a>
+                    <a href="#why-us" class="text-text-muted hover:text-primary-dark transition-colors text-sm font-medium">Why We're Different</a>
+                    <a href="#services" class="text-text-muted hover:text-primary-dark transition-colors text-sm font-medium">Services</a>
+                </div>
+
+                <!-- CTA Button -->
+                <a href="#contact" class="hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white bg-accent-gold hover:bg-opacity-90 transition-all shadow-md">
+                    Free Audit
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-primary-dark focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-white shadow-xl border-t border-accent-soft py-2">
+            <a href="#mission" class="block px-4 py-2 text-text-main hover:bg-neutral-bg">Our Mission</a>
+            <a href="#why-us" class="block px-4 py-2 text-text-main hover:bg-neutral-bg">Why We're Different</a>
+            <a href="#services" class="block px-4 py-2 text-text-main hover:bg-neutral-bg">Services</a>
+            <a href="#contact" class="block px-4 py-2 text-white bg-accent-gold m-2 rounded-lg text-center">Free Audit Now</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="space-y-24">
+
+        <!-- 1. Hero Section (Mission Control) -->
+        <section id="mission" class="pt-16 pb-24 bg-neutral-bg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p class="text-lg text-accent-gold font-semibold tracking-wide uppercase mb-3">Small Business, Big Results</p>
+                <h1 class="text-5xl md:text-7xl font-serif font-extrabold text-primary-dark mb-6 leading-tight">
+                    Social Media Marketing. <br class="hidden sm:inline"> <span class="text-accent-gold italic">Simplified.</span>
+                </h1>
+                <p class="max-w-4xl mx-auto text-xl text-text-muted mb-10">
+                    We empower local brands to achieve their full potential on social media. Stop guessing, start growing, and become a true **Rising Star** in your community.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#contact" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-xl text-white bg-primary-dark hover:bg-opacity-90 transition-all shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5">
+                        Book Your Free 3-Point Audit <i class="fas fa-arrow-right ml-3"></i>
+                    </a>
+                    <a href="#services" class="inline-flex items-center justify-center px-8 py-3 border border-accent-gold text-base font-medium rounded-xl text-accent-gold bg-transparent hover:bg-accent-soft transition-all">
+                        Explore Our Packages
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. The Problem/Solution (Target Orbit) -->
+        <section id="why-us" class="py-16">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-serif font-bold text-primary-dark mb-4">Why Small Businesses Choose Rising Starz</h2>
+                    <p class="text-xl text-text-muted max-w-3xl mx-auto">
+                        You're the local expert. We handle the digital distractions. We address the three biggest challenges small business owners face.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Pain Point 1: Overwhelm -->
+                    <div class="bg-neutral-card p-8 rounded-2xl shadow-lg border-t-4 border-accent-gold/50 transition-shadow duration-300 hover:shadow-xl">
+                        <i class="fas fa-clock text-4xl text-accent-gold mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-primary-dark mb-3">Challenge: No Time</h3>
+                        <p class="text-text-muted">
+                            Daily posting, engagement, analytics—it consumes hours you don't have. We manage the entire cycle, delivering quality content and reporting while you focus on operations.
+                        </p>
+                    </div>
+
+                    <!-- Pain Point 2: Inconsistency -->
+                    <div class="bg-neutral-card p-8 rounded-2xl shadow-lg border-t-4 border-accent-gold/50 transition-shadow duration-300 hover:shadow-xl">
+                        <i class="fas fa-bullseye text-4xl text-accent-gold mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-primary-dark mb-3">Challenge: No Strategy</h3>
+                        <p class="text-text-muted">
+                            Posting without a plan leads to zero results. We build a clear, data-driven strategy focused on lead generation and local visibility, not just "likes."
+                        </p>
+                    </div>
+
+                    <!-- Pain Point 3: Local Relevance -->
+                    <div class="bg-neutral-card p-8 rounded-2xl shadow-lg border-t-4 border-accent-gold/50 transition-shadow duration-300 hover:shadow-xl">
+                        <i class="fas fa-map-marker-alt text-4xl text-accent-gold mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-primary-dark mb-3">Challenge: Generic Content</h3>
+                        <p class="text-text-muted">
+                            Big agencies use generic campaigns. We understand your community. **We convert your neighbors into customers** with locally-relevant content.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Core Services (Flight Path) -->
+        <section id="services" class="py-16 bg-accent-soft/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-serif font-bold text-primary-dark mb-4">Our Simple Service Packages</h2>
+                    <p class="text-xl text-text-muted max-w-3xl mx-auto">
+                        Transparent pricing and clear deliverables, designed to fit the budget and needs of growing businesses.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Package 1: Starz Starter -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl flex flex-col justify-between transition-transform hover:scale-[1.02] duration-300 border border-accent-soft">
+                        <div>
+                            <span class="text-sm font-semibold text-primary-dark uppercase tracking-wider">Most Popular</span>
+                            <h3 class="text-3xl font-serif font-bold text-accent-gold mt-2 mb-4">Starz Starter</h3>
+                            <p class="text-lg text-text-muted mb-6">
+                                The essential package for establishing consistency and professional presence across core platforms.
+                            </p>
+                            <ul class="space-y-3 text-left text-text-main">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent-gold mt-1 mr-3 flex-shrink-0"></i>
+                                    <span>**3 Platform Optimization** (FB, IG, GMB)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent-gold mt-1 mr-3 flex-shrink-0"></i>
+                                    <span>**12 Curated Posts/Month** (Graphics + Captions)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent-gold mt-1 mr-3 flex-shrink-0"></i>
+                                    <span>Basic Engagement Monitoring</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent-gold mt-1 mr-3 flex-shrink-0"></i>
+                                    <span>Monthly Performance Snapshot</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="mt-8 text-center w-full py-3 bg-accent-gold text-white font-semibold rounded-xl hover:bg-opacity-90 transition-colors">
+                            Start Shining Now
+                        </a>
+                    </div>
+
+                    <!-- Package 2: Lead Gen Pro -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl flex flex-col justify-between transition-transform hover:scale-[1.02] duration-300 border border-accent-soft ring-2 ring-accent-gold">
+                        <div>
+                            <span class="text-sm font-semibold text-white bg-primary-dark px-3 py-1 rounded-full uppercase tracking-wider">Accelerated Growth</span>
+                            <h3 class="text-3xl font-serif font-bold text-primary-dark mt-2 mb-4">Lead Gen Pro</h3>
+                            <p class="text-lg text-text-muted mb-6">
+                                Built for aggressive lead generation and direct conversions to drive immediate sales.
+                            </p>
+                            <ul class="space-y-3 text-left text-text-main">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent-gold mt-1 mr-3 flex-shrink-0"></i>
+                                    <span>All Starz Starter features **PLUS**</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent-gold mt-1 mr-3 flex-shrink-0"></i>
+                                    <span>**20 Posts/Month** (Including 4 Short Videos/Reels)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent-gold mt-1 mr-3 flex-shrink-0"></i>
+                                    <span>**Dedicated Lead Nurturing** (DM/Comment Handling)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent-gold mt-1 mr-3 flex-shrink-0"></i>
+                                    <span>Quarterly Strategy Review & Refinement</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="mt-8 text-center w-full py-3 bg-primary-dark text-white font-semibold rounded-xl hover:bg-opacity-90 transition-colors">
+                            I Need Leads Now
+                        </a>
+                    </div>
+
+                    <!-- Package 3: Custom Star -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl flex flex-col justify-between transition-transform hover:scale-[1.02] duration-300 border border-accent-soft">
+                        <div>
+                            <span class="text-sm font-semibold text-primary-dark uppercase tracking-wider">Tailored Solutions</span>
+                            <h3 class="text-3xl font-serif font-bold text-accent-gold mt-2 mb-4">Custom Star</h3>
+                            <p class="text-lg text-text-muted mb-6">
+                                For unique brands or those needing paid advertising, influencer management, or complex reporting.
+                            </p>
+                            <ul class="space-y-3 text-left text-text-main">
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-accent-gold mt-1 mr-3 flex-shrink-0"></i>
+                                    <span>Custom Platform Selection (TikTok, LinkedIn, etc.)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-accent-gold mt-1 mr-3 flex-shrink-0"></i>
+                                    <span>Social Media Ad Campaign Management</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-accent-gold mt-1 mr-3 flex-shrink-0"></i>
+                                    <span>High-Volume Content Creation (Photoshoots/Video)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-accent-gold mt-1 mr-3 flex-shrink-0"></i>
+                                    <span>Full Reputation Management</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="mt-8 text-center w-full py-3 bg-accent-soft text-primary-dark font-semibold rounded-xl hover:bg-accent-gold hover:text-white transition-colors">
+                            Request Custom Quote
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Contact/CTA (Content Launchpad) -->
+        <section id="contact" class="py-20 bg-primary-dark">
+            <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-serif font-bold text-white mb-4">Ready to Become a Rising Star?</h2>
+                <p class="text-xl text-white/80 mb-8">
+                    Stop wasting time and start seeing measurable local growth. Your free, zero-obligation audit is waiting.
+                </p>
+                
+                <div class="bg-white p-6 rounded-xl shadow-2xl">
+                    <form id="contact-form" class="space-y-4">
+                        <input type="text" placeholder="Your Name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-accent-gold focus:border-accent-gold">
+                        <input type="email" placeholder="Business Email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-accent-gold focus:border-accent-gold">
+                        <textarea placeholder="Your Biggest Social Media Challenge (Optional)" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-accent-gold focus:border-accent-gold"></textarea>
+                        <button type="submit" class="w-full py-3 bg-accent-gold text-white font-semibold rounded-xl hover:bg-opacity-90 transition-all transform hover:scale-[1.01]">
+                            Request Free 3-Point Audit
+                        </button>
+                    </form>
+                    <p id="submission-message" class="mt-4 text-sm text-text-muted hidden">Thank you! We'll be in touch within 24 hours.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="py-10 border-t border-accent-soft bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-text-muted text-sm">
+                <p class="mb-2">&copy; 2025 Rising Starz Digital Solutions. All rights reserved.</p>
+                <div class="space-x-4">
+                    <a href="#" class="hover:text-primary-dark"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-primary-dark"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-primary-dark"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const contactForm = document.getElementById('contact-form');
+        const submissionMessage = document.getElementById('submission-message');
+        const navLinks = document.querySelectorAll('#mobile-menu a');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            
+            contactForm.reset();
+            submissionMessage.classList.remove('hidden');
+
+            setTimeout(() => {
+                submissionMessage.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
